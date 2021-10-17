@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/68d598ecc2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <img id="header-img" src="Dental Technology - Buy Premade Readymade Logos for Sale.jpg" alt="dental page logo" id="logo">
+            <ul>
+                <li><a href="#our-products">Features</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#cards">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="content">
+                <h1 id="title">Smile and your day gets Better</h1>
+
+            <div class="video">
+            <iframe 
+                class="video second"
+                width="560" 
+                height="315" 
+                src="https://www.youtube-nocookie.com/embed/lw7xIB0kPCo" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            </div>
+            <script>
+                var myVideo = document.getElementById("video-2");
+                function playPause() {
+                    if(myVideo.paused)
+                    myVideo.play();
+                    else
+                    myVideo.pause();
+                }
+            </script>
+            
+            <div id="our-products">
+            <ul>
+                <li><i class="fa fa-star-o">Premium materials</i>
+                    <p>Our doctors use the newest technology.</p>
+                </li>
+                <li><i class="fa fa-book">Bookings</i>
+                    <p>Schedule and reschedule as you wish.</p>
+                </li>
+                <li><i class="fa fa-smile-o">The Smile of your dreams</i>
+                    <p>Buy one of our packages and get a whitening session for free</p>
+                </li>
+            </ul>
+            </div>
+            <form id="form" action=" https://www.freecodecamp.com/email-submit">
+                <label for="email">Enter your email
+                    <input id="email" type="email" 
+                    name="email" 
+                    class="email-control" 
+                    placeholder="ex:email@yahoo.com" 
+                    required>
+
+                </label>
+
+                <input type="submit" id="submit" class="btn" value="send">
+            </form>
+
+            <div id="cards">
+                <div class="offer one">
+                    <h3>Package Basic</h3>
+                    <span>$100</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, placeat!</p>
+                    <button class="choose-option" id="btn-select">Select</button>
+                </div>
+
+                <div class="offer two">
+                    <h3>Package Fidelity</h3>
+                    <span>$250</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, soluta.</p>
+                    <button class="choose-option" id="btn-select">Select</button>
+                </div>
+
+                <div class="offer three">
+                    <h3>Pacakge Full</h3>
+                    <span>$400</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, provident?</p>
+                    <button class="choose-option" id="btn-select">Select</button>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <p href="#">&copy; Copyright 2021, Dentec Technology</p>
+                </ul>
+            </footer>
+        </div>
+    </div>  
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

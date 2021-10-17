@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header{
+    background: rgb(241, 241, 241);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
+    position: fixed;
+    height: fit-content;
+    width: 400px;
+    z-index: 1;
+}
+
+#nav-bar{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (min-width:400px){
+    #header{
+        width:100%;
+    }
+}
+
+#nav-bar img{
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#nav-bar ul{
+    list-style: none;
+}
+
+#nav-bar ul li{
+    display: inline;
+    margin: 30px;
+}
+
+
+#nav-bar a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+}
+
+@media screen and (max-width:680px){
+    #nav-bar a{
+        font-size: 1rem;
+        display: block;
+    }
+}
+
+.container{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    background: white;
+    height: 100%;
+    width: 100vw;
+    padding-top: 200px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#content #title{
+    color: cadetblue;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 400px){
+    #content #title{
+        width: 375px;
+        text-align: center;
+    }
+}
+
+
+#our-products li{
+    padding-bottom: 25px;
+    list-style: none;
+    font-size: 2rem;
+    color: rgb(17, 60, 85);
+    padding-right: 120px;
+}
+
+#our-products li p{
+    font-size: 1.2rem;
+    color: black;
+    margin: 20px;
+
+}
+
+#our-products ul{
+    display: flex;
+    margin: 120px;
+    padding-left: 100px;
+} 
+
+
+@media screen and (max-width: 890px) {
+    #our-products ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 430px;
+        text-align: center;
+    }
+}
+
+#form{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#form label{
+    display: flex;
+    font-size: 1.3rem;
+    color: cadetblue;
+    align-items: center;
+}
+
+#form .email-control{
+    height: 35px;
+    width: 250px;  
+    text-align: center;
+    margin: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form .email-control:focus{
+    border: 3px solid cyan;
+    outline: none;
+}
+
+#form .btn{
+    margin: 10px 10px;
+    height: 35px;
+    width: 70px;
+    border: none;
+    background: cadetblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:530px){
+    #form{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #form label{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+#cards{
+    margin:  100px;
+    display: flex;
+}
+
+#cards .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    margin: 100px;
+    border: 2px solid black;
+    height: 300px;
+    width: 400px;
+
+    background: rgb(255, 253, 230);
+}
+
+#cards .offer:hover{
+    height: 350px;
+    width: 450px;
+    border: 2px solid rgb(141, 243, 127);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#cards .offer h3{
+    background: rgb(56, 148, 160);
+    width: 100%;
+}
+
+#cards .offer p{
+    font-size: 1.5rem;
+}
+
+#cards .offer span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#cards .offer .choose-option{
+    align-items: center;
+    cursor: pointer;
+    height: 50px;
+    width: 160px;
+    margin-bottom: 20px;
+
+    border:none;
+    border-radius: 5px;
+    background: rgb(213, 223, 81);
+}
+
+
+@media screen and (max-width: 1000px) {
+    #cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer{
+    background-color: rgb(94, 94, 94);  
+    width: 100%;  
+}
+
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer p{
+    align-items: center;
+    margin:20px;
+}
+
+@media screen and (max-width:795px) {
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+}
